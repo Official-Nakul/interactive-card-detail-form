@@ -1,0 +1,17 @@
+.flex-dir-col {
+  display: flex;
+  flex-direction: column;
+}
+.flex-dir-row {
+  display: flex;
+  flex-direction: row;
+}
+.wrapper {
+  margin: 0rem 1rem 0rem 1rem;
+}
+.letter-space-15 {
+  letter-spacing: 0.15rem;
+}
+.gap-1 {
+  gap: 1rem;
+}

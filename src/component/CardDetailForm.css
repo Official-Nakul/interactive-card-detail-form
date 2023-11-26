@@ -1,0 +1,58 @@
+.formContainer {
+  width: 100vw;
+  margin-top: 3rem;
+}
+label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--dark-violet);
+}
+input {
+  border: solid 2px var(--light-gray-violet);
+  /* border-color: ; */
+  padding-left: 0.75rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  height: 2.5rem;
+  outline: none;
+}
+.groupLabel {
+  width: 14rem;
+  gap: 1.7rem;
+}
+.groupInputField {
+  gap: 0.5rem;
+}
+.groupInputField input:nth-child(1),
+.groupInputField input:nth-child(2) {
+  width: 4rem;
+}
+.groupInputField input:nth-child(3) {
+  width: 10.7rem;
+}
+button {
+  height: 3rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  width: inherit;
+  color: var(--white);
+  background-color: var(--dark-violet);
+}
+input:focus {
+  border: 2px solid var(--dark-violet);
+}
+
+@media (760px<width) {
+  .formContainer {
+    height: 100vh;
+    width: 65%;
+    margin-top: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .formContainer form {
+    margin-top: -5rem;
+  }
+}

@@ -1,0 +1,25 @@
+.containerCompletePage {
+  width: 100vw;
+  margin-top: 4rem;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.containerCompletePage > button {
+  width: 22rem;
+}
+.txt {
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.txt p:nth-child(1) {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--dark-violet);
+}
+.txt p:nth-child(2) {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--dark-gray-violet);
+}

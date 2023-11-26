@@ -1,0 +1,129 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+}
+
+p {
+  margin: 0%;
+}
+
+.container {
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+}
+.cardHolder {
+  width: inherit;
+  height: 18.2rem;
+  background: url("/images/bg-main-mobile.png");
+  background-repeat: no-repeat;
+  background-size: 100vw auto;
+  box-sizing: border-box;
+  color: var(--white);
+}
+
+/*---------CardDetails----------*/
+.creditBack,
+.creditFront {
+  height: 10.5rem;
+  width: 19rem;
+}
+.creditBack {
+  margin: 2rem 0rem 0rem 5rem;
+}
+.creditFront {
+  margin: 0.3rem 0rem 0rem 1rem;
+}
+.cardLogo {
+  height: 2rem;
+  width: 3.5rem;
+  aspect-ratio: 1/1;
+  margin: -9rem 0rem 0rem 2rem;
+}
+.cvNumber {
+  /*CV*/
+  font-size: 12px;
+  width: 1.9rem;
+  margin: -5.8rem 0rem 0rem 20rem;
+}
+.cardNumber {
+  width: 17rem;
+  font-weight: 500;
+  font-size: 20px;
+  margin: 2rem 0rem 0rem 2rem;
+}
+.userDetailGroup {
+  width: 22rem;
+  margin: 1rem 0rem 0rem 2rem;
+  gap: 3.8rem;
+  /* justify-content: space-around; */
+  font-size: 12px;
+  font-weight: 300;
+  box-sizing: border-box;
+}
+.userDetailGroup p:nth-child(1) {
+  width: 10rem;
+}
+.userDetailGroup p:nth-child(2) {
+  width: 2.937rem;
+}
+
+@media (760px<width) {
+  .container {
+    height: 100vh;
+    width: 33%;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .cardHolder {
+    height: inherit;
+    width: 100%;
+    background-image: url("/images/bg-main-desktop.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .creditFront {
+    margin: -22rem 0rem 0rem 15rem;
+  }
+  .creditBack {
+    margin: 26rem 0rem 0rem 19rem;
+  }
+  .creditBack,
+  .creditFront {
+    height: 12.5rem;
+    width: 23rem;
+    /* box-shadow: 2rem 2rem 1rem 1rem var(--light-gray-violet); */
+    /* filter: drop-shadow(1.5rem 1rem 1rem var(--light-gray-violet)); */
+  }
+  /* .creditBack::after,
+  .creditFront::after {
+    content: "";
+    /* width: 20rem; 
+    height: 10rem;
+    width: 10rem;
+    outline: 2px solid red;
+    /* box-shadow: 2rem 2rem 1rem 1rem var(--light-gray-violet); 
+    filter: drop-shadow(1.5rem 1rem 1rem var(--light-gray-violet));
+  } */
+  .cardLogo {
+    height: 2.5rem;
+    width: 4.5rem;
+    margin: -11rem 0rem 0rem 16.5rem;
+    z-index: 10;
+  }
+  .cardNumber {
+    width: 19rem;
+    font-size: 22px;
+    margin: 3.5rem 0rem 0rem 16.75rem;
+    z-index: 10;
+  }
+  .userDetailGroup {
+    width: 20rem;
+    gap: 5.85rem;
+    margin-left: 16.9rem;
+    z-index: 10;
+  }
+  .cvNumber {
+    margin: -6.75rem 0rem 0rem 37.5rem;
+    z-index: 10;
+  }
+}
