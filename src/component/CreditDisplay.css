@@ -12,6 +12,7 @@ p {
   justify-content: center;
 }
 .cardHolder {
+  position: relative;
   width: inherit;
   height: 18.2rem;
   background: url("/images/bg-main-mobile.png");
@@ -24,38 +25,54 @@ p {
 /*---------CardDetails----------*/
 .creditBack,
 .creditFront {
+  position: absolute;
   height: 10.5rem;
   width: 19rem;
+  right: 0;
 }
 .creditBack {
-  margin: 2rem 0rem 0rem 5rem;
+  top: 11.3%;
+  transform: translateX(-10%);
 }
 .creditFront {
-  margin: 0.3rem 0rem 0rem 1rem;
+  top: 44%;
+  transform: translateX(-22.4%);
 }
 .cardLogo {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateX(-543%);
   height: 2rem;
   width: 3.5rem;
   aspect-ratio: 1/1;
-  margin: -9rem 0rem 0rem 2rem;
+  z-index: 10;
 }
 .cvNumber {
   /*CV*/
+  position: absolute;
+  right: 0;
+  top: 37%;
+  transform: translateX(-212%);
   font-size: 12px;
   width: 1.9rem;
-  margin: -5.8rem 0rem 0rem 20rem;
 }
 .cardNumber {
+  position: absolute;
+  right: 0;
+  top: 73%;
+  transform: translateX(-32%);
   width: 17rem;
   font-weight: 500;
   font-size: 20px;
-  margin: 2rem 0rem 0rem 2rem;
 }
 .userDetailGroup {
-  width: 22rem;
-  margin: 1rem 0rem 0rem 2rem;
-  gap: 3.8rem;
-  /* justify-content: space-around; */
+  position: absolute;
+  top: 89%;
+  right: 0;
+  transform: translateX(-27%);
+  width: 17.6rem;
+  gap: 4.6rem;
   font-size: 12px;
   font-weight: 300;
   box-sizing: border-box;
@@ -67,10 +84,10 @@ p {
   width: 2.937rem;
 }
 
-@media (760px<width) {
+@media (950px<width) {
   .container {
     height: 100vh;
-    width: 33%;
+    width: 25%;
     flex-direction: row;
     justify-content: flex-start;
   }
@@ -82,48 +99,51 @@ p {
     background-size: 100% 100%;
   }
   .creditFront {
-    margin: -22rem 0rem 0rem 15rem;
+    top: 20%;
+    transform: translateX(50%);
   }
   .creditBack {
-    margin: 26rem 0rem 0rem 19rem;
+    top: 47%;
+    transform: translateX(76%);
   }
   .creditBack,
   .creditFront {
     height: 12.5rem;
     width: 23rem;
-    /* box-shadow: 2rem 2rem 1rem 1rem var(--light-gray-violet); */
-    /* filter: drop-shadow(1.5rem 1rem 1rem var(--light-gray-violet)); */
   }
-  /* .creditBack::after,
-  .creditFront::after {
-    content: "";
-    /* width: 20rem; 
-    height: 10rem;
-    width: 10rem;
-    outline: 2px solid red;
-    /* box-shadow: 2rem 2rem 1rem 1rem var(--light-gray-violet); 
-    filter: drop-shadow(1.5rem 1rem 1rem var(--light-gray-violet));
-  } */
+
   .cardLogo {
+    position: absolute;
+    right: 0;
+    top: 22%;
     height: 2.5rem;
     width: 4.5rem;
-    margin: -11rem 0rem 0rem 16.5rem;
+    transform: translateX(-116%);
     z-index: 10;
   }
   .cardNumber {
+    position: absolute;
+    right: 0;
+    top: 35%;
+    transform: translateX(50%);
     width: 19rem;
     font-size: 22px;
-    margin: 3.5rem 0rem 0rem 16.75rem;
     z-index: 10;
   }
   .userDetailGroup {
+    position: absolute;
+    top: 40%;
+    right: 0;
+    transform: translateX(53%);
     width: 20rem;
-    gap: 5.85rem;
-    margin-left: 16.9rem;
+    gap: 7.6rem;
     z-index: 10;
   }
   .cvNumber {
-    margin: -6.75rem 0rem 0rem 37.5rem;
     z-index: 10;
+    position: absolute;
+    top: 57.8%;
+    right: 0;
+    transform: translateX(770%);
   }
 }

@@ -43,13 +43,13 @@ input:focus {
   border: 2px solid var(--dark-violet);
 }
 
-@media (760px<width) {
+@media (950px<width) {
   .formContainer {
     height: 100vh;
-    width: 65%;
+    width: 45%;
     margin-top: 0%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
   }
   .formContainer form {

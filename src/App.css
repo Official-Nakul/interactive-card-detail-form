@@ -21,8 +21,9 @@ input,
 button {
   font-family: "Space Grotesk", sans-serif !important;
 }
-@media (760px<width) {
+@media (950px<width) {
   .mainContainer {
     flex-direction: row !important;
+    justify-content: space-between;
   }
 }

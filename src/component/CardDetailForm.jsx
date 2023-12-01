@@ -13,13 +13,16 @@ const CardDetailForm = ({ formData, onFormChange }) => {
       <form action="" className="flex-dir-col gap-1 wrapper">
         <div className="CardholderNameGroup flex-dir-col gap-1 letter-space-15">
           <label htmlFor="cardHolderName">CARDHOLDER NAME</label>
-          <input
-            name="cardHolderName"
-            type="text"
-            value={formData.cardHolderName}
-            placeholder="e.g. Nakul Visavadia"
-            onChange={handleInputChange}
-          />
+          <div className="flex-dir-col">
+            <input
+              name="cardHolderName"
+              type="text"
+              value={formData.cardHolderName}
+              placeholder="e.g. Nakul Visavadia"
+              onChange={handleInputChange}
+            />
+            {/* <span>Can't be blank</span> */}
+          </div>
         </div>
         <div className="CardholderNumberGroup flex-dir-col gap-1 letter-space-15">
           <label htmlFor="cardHolderNumber">CARD NUMBER</label>
